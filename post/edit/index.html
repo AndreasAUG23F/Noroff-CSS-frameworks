@@ -5,40 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Noroff FED2 JS2 CA</title>
     <script type="module" src="/src/app.js"></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
   </head>
 
   <body
     class="bg-indigo-600 text-white flex flex-col items-center p-5 min-h-screen"
   >
-    <h1 class="text-5xl text-white mb-5 text-shadow-lg">Edit Post</h1>
+    <h1 class="text-3xl sm:text-5xl text-white mb-5 text-shadow-lg">
+      Edit Post
+    </h1>
 
     <form
       name="editPost"
       id="editPostForm"
-      class="w-full max-w-3xl p-8 bg-indigo-700 rounded-lg shadow-lg mb-10"
+      class="w-full max-w-xl sm:max-w-3xl p-6 sm:p-8 bg-indigo-700 rounded-lg shadow-lg mb-8"
     >
-      <label for="title" class="block text-lg font-medium mb-2">Title:</label>
+      <label for="title" class="block text-base sm:text-lg font-medium mb-2"
+        >Title:</label
+      >
       <input
         type="text"
         name="title"
         id="title"
         required
-        class="w-full p-2 mb-4 border border-transparent rounded-lg bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-green-500"
+        class="w-full p-2 mb-4 border border-transparent rounded-lg bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-green-500 text-sm sm:text-base"
       />
 
-      <label for="body" class="block text-lg font-medium mb-2">Body:</label>
+      <label for="body" class="block text-base sm:text-lg font-medium mb-2"
+        >Body:</label
+      >
       <textarea
         name="body"
         id="body"
         required
-        class="w-full p-2 mb-4 border border-transparent rounded-lg bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-green-500"
+        class="w-full p-2 mb-4 border border-transparent rounded-lg bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-green-500 text-sm sm:text-base"
       ></textarea>
 
-      <label for="tags" class="block text-lg font-medium mb-2"
+      <label for="tags" class="block text-base sm:text-lg font-medium mb-2"
         >Tags (space-separated):</label
       >
       <input
@@ -46,21 +48,23 @@
         name="tags"
         id="tags"
         required
-        class="w-full p-2 mb-4 border border-transparent rounded-lg bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-green-500"
+        class="w-full p-2 mb-4 border border-transparent rounded-lg bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-green-500 text-sm sm:text-base"
       />
 
-      <label for="url" class="block text-lg font-medium mb-2">Media URL:</label>
+      <label for="url" class="block text-base sm:text-lg font-medium mb-2"
+        >Media URL:</label
+      >
       <input
         type="url"
         name="url"
         id="url"
         placeholder="https://example.com/image.jpg"
         required
-        class="w-full p-2 mb-4 border border-transparent rounded-lg bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-green-500"
+        class="w-full p-2 mb-4 border border-transparent rounded-lg bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-green-500 text-sm sm:text-base"
       />
 
-      <label for="alt" class="block text-lg font-medium mb-2"
-        >Media Alt text</label
+      <label for="alt" class="block text-base sm:text-lg font-medium mb-2"
+        >Media Alt text:</label
       >
       <input
         type="text"
@@ -68,13 +72,13 @@
         id="alt"
         placeholder="A description of the image"
         required
-        class="w-full p-2 mb-4 border border-transparent rounded-lg bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-green-500"
+        class="w-full p-2 mb-4 border border-transparent rounded-lg bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-green-500 text-sm sm:text-base"
       />
 
       <button
         type="submit"
         id="editButton"
-        class="w-full p-3 bg-green-500 text-white font-bold rounded-lg transition duration-300 ease-in-out hover:bg-green-600 shadow-lg"
+        class="w-full p-2 sm:p-3 bg-green-500 text-white font-bold rounded-lg transition duration-300 ease-in-out hover:bg-green-600 shadow-lg text-sm sm:text-lg"
       >
         Edit Post
       </button>
